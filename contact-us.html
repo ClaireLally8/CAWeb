@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel='stylesheet' href='assets/css/styles.css'>
+      <title>Moore's B&B</title>
+   </head>
+   <body>
+      <div class=”main-container”>
+         <header>
+            <div class="navbar" id="navbar">
+               <a href="index.html" class="image-mobile"><img src = "assets/images/logo.svg" height = "50"></a>
+               <a href="index.html" class="navlink">Home</a>
+               <a href="about.html"class="navlink">About</a>
+               <a href="index.html" class="image-desktop"><img src = "assets/images/logo.svg" height = "65"></a>
+               <a href="our-rooms.html"class="navlink">Our Rooms</a>
+               <a href="contact-us.html"class="navlink">Contact Us</a>
+               <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()"><i class="fa fa-bars"></i></a>
+            </div>
+         </header>
+         <section>
+            <div id = "contact-heading"></div>
+         </section>
+         <section>
+            <h2 class = "center-text page-heading">Get in Touch!</h2>
+            <hr id = "divider">
+         </section>
+         <section>
+             <div class="col-50">
+                <form class="contact-form">
+                <h5>How Can We Help?</h5>
+                 <p>If you have any questions or queries no matter how big or small, we would love to help you in anyway that we can. Leave your details below and we will see what we can do for you.</p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="" name="name">
+                    <label for="email">Email Address</label>
+                    <input id="email" class="" type="email" name="email">
+                    <label for="enquiry">Write Your Messsage</label>
+                    <textarea rows="5" name="enquiry" id="enquiry" class=""></textarea>
+                    <button id="contact-button" onclick="submitForm()">Send</button>
+                </form>
+            </div>
+         </section>
+         <footer>
+            <div class="footer-flex">
+               <div>
+                  <h5>Contact Information</h5>
+                  <p>Moore's B&B<br>24 College Road,<br> Galway, Ireland</p>
+               </div>
+               <div>
+                  <h5>Book Online!</h5>
+                  <p>You can book your next stay at Moore's B&B online through <a href = "https://www.booking.com/" target="_blank">booking.com!</a></p>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>

@@ -32,8 +32,7 @@ footer {
   position: relative;
   padding-bottom: 50px; /* height of your footer */
 }
-
-h1, h2 {
+h1, h2, h5 {
   font-family: Prata;
 }
 h1 {
@@ -53,14 +52,50 @@ h3 {
   letter-spacing: 0.0675rem;
 }
 h5 {
-  font-family: Prata;
   font-size:1em;
   letter-spacing: 2px;
+  color:var(--darkgreen);
 }
 p {
   font-family: Mulish;
-  color: var(--darkgreen);
+  color: var(--green);
   font-weight:400;
+}
+label {
+  font-family:Mulish;
+  font-weight:300;
+  font-size:0.8rem;
+  text-transform: uppercase;
+  color:var(--darkgreen);
+  letter-spacing: 1px;
+}
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom:1rem;
+}
+form {
+  margin:2em 3em;
+}
+button {
+  background-color: #ffffff;
+  font-family:Mulish;
+  font-weight:300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding:1.2rem 1.2rem;
+  color:var(--darkgreen);
+  border-color: var(--green);
+}
+button:hover {
+  background-color:var(--darkgreen);
+  transition: background-color 0.6s ease-in;
+  color:white;
+}
+.margin-bottom {
+  margin-bottom:2rem;
 }
 .center-text {
   text-align: center;
@@ -94,6 +129,33 @@ p {
   background-position: center;
   background: url(../images/hero-image.jpeg) no-repeat center center;
 }
+#about-image
+{
+  height: 400px;
+  width: 100%;
+  background-size: cover!important;
+  opacity:0.8;
+  background-position: center;
+  background: url(../images/about-page.jpeg) no-repeat center center;
+}
+#room-heading
+{
+  height: 400px;
+  width: 100%;
+  background-size: cover!important;
+  opacity:0.8;
+  background-position: center;
+  background: url(../images/rooms-heading.jpeg) no-repeat center center;
+}
+#contact-heading
+{
+  height: 400px;
+  width: 100%;
+  background-size: cover!important;
+  opacity:0.8;
+  background-position: center;
+  background: url(../images/contact-heading.jpeg) no-repeat center center;
+}
 #hero-text{
   color: #ffffff;
   text-transform: uppercase;
@@ -117,6 +179,13 @@ p {
   margin-top:3rem;
   box-shadow:0.0625rem 0.0625rem 0.5rem #888;
   opacity:0.9;
+}
+.center-image {
+  height: 480px;
+  width: auto;
+  opacity:0.85;
+  background-position: center;
+  background: url(../images/galway-city.jpeg) no-repeat center center;
 }
 .col {
   padding:1rem 1.5rem;
@@ -149,8 +218,12 @@ p {
 }
 .split-par {
   max-width:50%;
-  padding:6rem 3rem;
+  margin:6rem 3rem;
   line-height: 23px;
+}
+.split-section ul{
+  margin-left: 4em;
+  margin-right:4em
 }
 .footer-flex {
   display:flex;
@@ -160,6 +233,9 @@ p {
 .footer-flex div {
   max-width: 20%;
   margin:1em 4em;
+}
+.col-50 {
+  width:50%;
 }
 }
 @media screen and (max-width: 800px) {
@@ -208,3 +284,5 @@ p {
   justify-content:space-between;
 }
 }
+
+
